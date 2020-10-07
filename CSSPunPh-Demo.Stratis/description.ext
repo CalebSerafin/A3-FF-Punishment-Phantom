@@ -1,0 +1,26 @@
+author = "Caleb Serafin";
+OnLoadName = "CSS Punishment Phantom-Demo";
+OnLoadMission = """I hope Lt. James didn't roughen you up too much.""";
+//loadScreen = "Miller.jpg";
+briefingName = "CSS Punishment Phantom-Demo";
+overviewText = "Morning Kerry, Cpt. Miller wanted to see you up early for a special assignment.";
+overviewPicture = "Miller.jpg";
+
+#include "debug.hpp"
+
+class CfgFunctions {
+    #include "functions.hpp"
+};
+
+class CfgDebriefing
+{
+    class destroyed
+    {
+        title = "Stratis has washed away";
+        subtitle = "Stratis got destroyed by Miller The Killer.";
+        description = "Stratis is now but a memory.<br/>Cpt. Miller was last seen on a ship named Project 19 sailing in South China Sea.";
+        pictureBackground = "Miller.jpg";
+        picture = "b_unknown";
+        pictureColor[] = {0.5,0.0,0.0,1};
+    };
+};
